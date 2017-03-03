@@ -4,9 +4,6 @@
 #include <sstream>
 #include <fstream>
 #include <stdlib.h>
-using namespace l;
-using namespace l1;
-using namespace lxx;
 using namespace lx;
 using namespace sf;
 using namespace std;
