@@ -4,7 +4,7 @@
 #include <sstream>
 #include <fstream>
 #include <stdlib.h>
-using namespace lx;
+using namespace lx23;
 using namespace sf;
 using namespace std;
 bool startgame(){
@@ -82,7 +82,7 @@ bool startgame(){
 				{
 				case true:
 				{
-				 rule.setString(L"Левая кнопка мыши отвечает за бросок первого игрока, \nПравая кнопка мыши отвечает за бросок второго игрока\nR-Рестарт\nУдачной игры.");
+				 rule.setString(L"Г‹ГҐГўГ Гї ГЄГ­Г®ГЇГЄГ  Г¬Г»ГёГЁ Г®ГІГўГҐГ·Г ГҐГІ Г§Г  ГЎГ°Г®Г±Г®ГЄ ГЇГҐГ°ГўГ®ГЈГ® ГЁГЈГ°Г®ГЄГ , \nГЏГ°Г ГўГ Гї ГЄГ­Г®ГЇГЄГ  Г¬Г»ГёГЁ Г®ГІГўГҐГ·Г ГҐГІ Г§Г  ГЎГ°Г®Г±Г®ГЄ ГўГІГ®Г°Г®ГЈГ® ГЁГЈГ°Г®ГЄГ \nR-ГђГҐГ±ГІГ Г°ГІ\nГ“Г¤Г Г·Г­Г®Г© ГЁГЈГ°Г».");
 				 rule.setPosition(45, 20);
 				 ruleb.setPosition(0, 0);
 				 zap = false;
@@ -124,21 +124,21 @@ bool startgame(){
 			ofstream Save("save.txt");
 			if (sum > sum1)
 		{
-				rec.setString(L"Первый игрок победил ");
+				rec.setString(L"ГЏГҐГ°ГўГ»Г© ГЁГЈГ°Г®ГЄ ГЇГ®ГЎГҐГ¤ГЁГ« ");
 				rec.setPosition(350, 400);
-				Save << "Первый игрок победил ";
+				Save << "ГЏГҐГ°ГўГ»Г© ГЁГЈГ°Г®ГЄ ГЇГ®ГЎГҐГ¤ГЁГ« ";
 		}
 			if (sum1 > sum)
 		{
-				rec.setString(L"Второй игрок победил ");
+				rec.setString(L"Г‚ГІГ®Г°Г®Г© ГЁГЈГ°Г®ГЄ ГЇГ®ГЎГҐГ¤ГЁГ« ");
 				rec.setPosition(350, 400);
-				Save << "Второй игрок победил ";
+				Save << "Г‚ГІГ®Г°Г®Г© ГЁГЈГ°Г®ГЄ ГЇГ®ГЎГҐГ¤ГЁГ« ";
 		}
 			if (sum == sum1)
 		{
-			rec.setString(L"Ничья ");
+			rec.setString(L"ГЌГЁГ·ГјГї ");
 			rec.setPosition(350, 400);
-			Save << "Была ничья";
+			Save << "ГЃГ»Г«Г  Г­ГЁГ·ГјГї";
 		}
 	}
 		ostringstream sumstring;
@@ -147,7 +147,7 @@ bool startgame(){
 		countstring << count;
 		ostringstream xystring;
 		xystring << xy;
-		numdice.setString(L"Брошено костей " + countstring.str()+ L"\nКоличество дублей "+ xystring.str()+L"\nСумма " + sumstring.str());
+		numdice.setString(L"ГЃГ°Г®ГёГҐГ­Г® ГЄГ®Г±ГІГҐГ© " + countstring.str()+ L"\nГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г¤ГіГЎГ«ГҐГ© "+ xystring.str()+L"\nГ‘ГіГ¬Г¬Г  " + sumstring.str());
 		numdice.setPosition(100, 300);
 		ostringstream sumstring1;
 		sumstring1 << sum1;
@@ -155,7 +155,7 @@ bool startgame(){
 		countstring1 << count1;
 		ostringstream xystring1;
 		xystring1 << xy1;
-		numdice1.setString(L"Брошено костей " + countstring1.str() + L"\nКоличество дублей " + xystring1.str() + L"\nСумма " + sumstring1.str());
+		numdice1.setString(L"ГЃГ°Г®ГёГҐГ­Г® ГЄГ®Г±ГІГҐГ© " + countstring1.str() + L"\nГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г¤ГіГЎГ«ГҐГ© " + xystring1.str() + L"\nГ‘ГіГ¬Г¬Г  " + sumstring1.str());
 		numdice1.setPosition(600, 300);
 		app.draw(background);
 		app.draw(rec);
@@ -165,7 +165,7 @@ bool startgame(){
 		dice2.setPosition(300, 50);
 		dice11.setPosition(550, 50);
 		dice22.setPosition(800, 50);
-		help.setString(L"СКМ для вызова правил");
+		help.setString(L"Г‘ГЉГЊ Г¤Г«Гї ГўГ»Г§Г®ГўГ  ГЇГ°Г ГўГЁГ«");
 		help.setPosition(100, 250);
 		if (x != 0){
 			app.draw(dice1);
