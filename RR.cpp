@@ -4,7 +4,7 @@
 #include <sstream>
 #include <fstream>
 #include <stdlib.h>
-using namespace lx23;
+using namespace l;
 using namespace sf;
 using namespace std;
 bool startgame(){
