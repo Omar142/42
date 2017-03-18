@@ -1,11 +1,11 @@
-#include <SFML/Graphics.hpp>
+﻿#include <SFML/Graphics.hpp>
 #include <time.h>
 #include <iostream>
 #include <sstream>
 #include <fstream>
 #include <stdlib.h>
-using namespace l;
 using namespace sf;
+using namespace lexa;
 using namespace std;
 bool startgame(){
 	bool game = true;
