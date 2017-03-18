@@ -12,9 +12,9 @@ bool startgame(){
 	Font font;
 	font.loadFromFile("source/1.ttf");
 	Text text("", font, 25);
-	text.setFillColor(Color::White);
+	text.setFillColor(Color::pink);
 	Text rec("", font, 25);
-	rec.setFillColor(Color::White);
+	rec.setFillColor(Color::black);
 	Text numdice("", font, 25);
 	numdice.setFillColor(Color::White);
 	Text numdice1("", font, 25);
